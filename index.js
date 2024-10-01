@@ -223,7 +223,7 @@ let formResponse = () => {
         e.preventDefault();
 
         // Add access key
-        formData.append("access_key", "f32c9e99-8795-45de-868d-d3ffe5c1c8b6");
+        formData.append("apikey", "f32c9e99-8795-45de-868d-d3ffe5c1c8b6");
 
         var object = {};
         formData.forEach((value, key) => {

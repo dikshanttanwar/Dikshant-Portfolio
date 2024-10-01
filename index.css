@@ -1678,4 +1678,9 @@ footer .fullLine5{
         /* margin-bottom: 10%; */
     }
 
+    #result{
+        position:absolute;
+        bottom: 1%;
+      }    
+
 } 
