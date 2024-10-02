@@ -215,11 +215,11 @@ let page1Animation=()=>{
 // }
 
 let formResponse = () => {
-    const form = document.querySelector("form");
-    const result = document.getElementById("result");
+        const form = document.querySelector("form");
+        const result = document.getElementById("result");
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+        form.addEventListener("submit", function (e) {
+                e.preventDefault();
         const formData = new FormData(form);
         // formData.append("access_key", "f32c9e99-8795-45de-868d-d3ffe5c1c8b6");
 
@@ -228,36 +228,36 @@ let formResponse = () => {
 
         // var object = {};
         // formData.forEach((value, key) => {
-        //     object[key] = value;
-        // });
-        // var json = JSON.stringify(object);
+            //     object[key] = value;
+            // });
+            // var json = JSON.stringify(object);
 
-        result.innerHTML = "Please wait...";
+            result.innerHTML = "Please wait...";
 
         fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-            },
-            body: json,
-        })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = json.message;
-                    result.classList.remove("text-gray-500");
+                method: "POST",
+                headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                    },
+                    body: json,
+                })
+                    .then(async (response) => {
+                            let json = await response.json();
+                            if (response.status == 200) {
+                                    result.innerHTML = json.message;
+                                    result.classList.remove("text-gray-500");
                     result.classList.add("text-green-500");
                 } else {
-                    result.innerHTML = json.message;
+                        result.innerHTML = json.message;
                     result.classList.remove("text-gray-500");
                     result.classList.add("text-red-500");
                 }
             })
             .catch((error) => {
-                result.innerHTML = "Something went wrong!";
-            })
-            .then(function () {
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
                 form.reset();
                 setTimeout(() => {
                     result.style.display = "none";
@@ -265,8 +265,6 @@ let formResponse = () => {
             });
     });
 }
-
-
 
 
 pointer();  
