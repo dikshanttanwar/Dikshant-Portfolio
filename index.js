@@ -219,24 +219,26 @@ let formResponse = () => {
     const result = document.getElementById("result");
 
     form.addEventListener("submit", function (e) {
-        const formData = new FormData(form);
         e.preventDefault();
+        const formData = new FormData(form);
+        // formData.append("access_key", "f32c9e99-8795-45de-868d-d3ffe5c1c8b6");
 
-        // Add access key
-        formData.append("apikey", "f32c9e99-8795-45de-868d-d3ffe5c1c8b6");
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
 
-        var object = {};
-        formData.forEach((value, key) => {
-            object[key] = value;
-        });
-        var json = JSON.stringify(object);
+        // var object = {};
+        // formData.forEach((value, key) => {
+        //     object[key] = value;
+        // });
+        // var json = JSON.stringify(object);
+
         result.innerHTML = "Please wait...";
 
         fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
             },
             body: json,
         })
@@ -259,7 +261,7 @@ let formResponse = () => {
                 form.reset();
                 setTimeout(() => {
                     result.style.display = "none";
-                }, 5000);
+                }, 3000);
             });
     });
 }
