@@ -631,6 +631,15 @@ nav .center a:hover:before {
     background-color: var(--secondary-color);
     margin-top: 15px;
 }
+.skillset{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw 3.5vw;
+    width: 80%;
+    margin-top: 5%;
+}
 
 /* .skillset{
     display:grid;
@@ -643,18 +652,7 @@ nav .center a:hover:before {
     margin-top: 5%;
     background-color: red;
 } */
-.skillset{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* column-gap: 3.8vw;
-    row-gap: 3.5vw; */
-    gap: 3vw 3.5vw;
-    width: 80%;
-    margin-top: 5%;
-    /* background-color: red; */
-}
+
 .skillBlock{
     gap:1.4vw;
     width:150px;
