@@ -632,19 +632,33 @@ nav .center a:hover:before {
     margin-top: 15px;
 }
 
-.skillset{
+/* .skillset{
     display:grid;
+    align-items: center;
     grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     column-gap: 3.8vw;
     row-gap: 3.5vw;
-    width: fit-content;
+    width: 80%;
+    margin-top: 5%;
+    background-color: red;
+} */
+.skillset{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* column-gap: 3.8vw;
+    row-gap: 3.5vw; */
+    gap: 3vw 3.5vw;
+    width: 80%;
     margin-top: 5%;
     /* background-color: red; */
 }
 .skillBlock{
     gap:1.4vw;
-    width:9vw;
-    height:24vh;
+    width:150px;
+    height:170px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -801,7 +815,7 @@ nav .center a:hover:before {
     transition: opacity 0.1s;
 }
 .card .fdcal h1:before{
-    content:'FD Calculator';
+    content:'Ecommerce Site';
     position: absolute;
     top:82%;
     opacity:0;
