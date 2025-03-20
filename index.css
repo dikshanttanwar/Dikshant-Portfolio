@@ -792,7 +792,7 @@ nav .center a:hover:before {
     transition: opacity 0.1s;
 }
 .card .dicegame h1:before{
-    content:'Dice Game';
+    content:'ChatterBox';
     position: absolute;
     top:82%;
     opacity:0;
@@ -806,7 +806,7 @@ nav .center a:hover:before {
     transition: opacity 0.1s;
 }
 .card .weather h1:before{
-    content:'Weather';
+    content:'CAPSTAB';
     position: absolute;
     top:82%;
     opacity:0;
