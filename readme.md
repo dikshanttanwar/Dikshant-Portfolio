@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! 🚀 This is a showcase of my **skills, projects, and experience** in **full-stack web development** and software engineering.
 
-🔗 **Live Website:** [dikshanttanwar.live](https://dikshanttanwar.live/)
+🔗 **Live Website:** [Live Link]([https://dikshanttanwar.live/](https://dikshanttanwar.github.io/Dikshant-Portfolio/))
 
 ## 📌 About the Portfolio
 This website is designed to highlight my **technical expertise, projects, and professional journey**. It includes:
